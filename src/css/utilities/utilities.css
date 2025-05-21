@@ -1,0 +1,298 @@
+/* ==================================================
+    UTILITIES — Visual styling utilities for Templater.css
+===================================================== */
+
+/* 01. Object Fit */
+.fit-contain      { -o-object-fit: contain !important; object-fit: contain !important; }
+.fit-cover        { -o-object-fit: cover !important; object-fit: cover !important; }
+.fit-fill         { -o-object-fit: fill !important; object-fit: fill !important; }
+.fit-scale-down   { -o-object-fit: scale-down !important; object-fit: scale-down !important; }
+
+/* 02. Border Radius */
+.rd-none  { border-radius: var(--tpl-rd-none) !important; }
+.rd-nw    { border-radius: var(--tpl-rd-nw) !important; }
+.rd-xs    { border-radius: var(--tpl-rd-xs) !important; }
+.rd-tn    { border-radius: var(--tpl-rd-tn) !important; }
+.rd-sm    { border-radius: var(--tpl-rd-sm) !important; }
+.rd-sl    { border-radius: var(--tpl-rd-sl) !important; }
+.rd-xl    { border-radius: var(--tpl-rd-xl) !important; }
+.rd-pill  { border-radius: var(--tpl-rd-pill) !important; }
+.rd-full  { border-radius: var(--tpl-rd-full) !important; }
+
+/* 03. Box Shadow */
+.shadow-sm    { box-shadow: var(--tpl-shadow-sm) !important; }
+.shadow-md    { box-shadow: var(--tpl-shadow-md) !important; }
+.shadow-lg    { box-shadow: var(--tpl-shadow-lg) !important; }
+.shadow-xl    { box-shadow: var(--tpl-shadow-xl) !important; }
+.shadow-inset { box-shadow: var(--tpl-shadow-inset) !important; }
+
+/* 04. Backdrop Filter */
+.blur-sm { -webkit-backdrop-filter: var(--tpl-blur-sm) !important; backdrop-filter: var(--tpl-blur-sm) !important; }
+.blur-md { -webkit-backdrop-filter: var(--tpl-blur-md) !important; backdrop-filter: var(--tpl-blur-md) !important; }
+.blur-lg { -webkit-backdrop-filter: var(--tpl-blur-lg) !important; backdrop-filter: var(--tpl-blur-lg) !important; }
+
+.grayscale-0    { -webkit-filter: grayscale(0%) !important; filter: grayscale(0%) !important; }
+.grayscale-100  { -webkit-filter: grayscale(100%) !important; filter: grayscale(100%) !important; }
+
+.brightness-050 { -webkit-filter: brightness(0.5) !important; filter: brightness(0.5) !important; }
+.brightness-075 { -webkit-filter: brightness(0.75) !important; filter: brightness(0.75) !important; }
+.brightness-100 { -webkit-filter: brightness(1) !important; filter: brightness(1) !important; }
+.brightness-125 { -webkit-filter: brightness(1.25) !important; filter: brightness(1.25) !important; }
+.brightness-150 { -webkit-filter: brightness(1.5) !important; filter: brightness(1.5) !important; }
+
+.contrast-050   { -webkit-filter: contrast(0.5) !important; filter: contrast(0.5) !important; }
+.contrast-100   { -webkit-filter: contrast(1) !important; filter: contrast(1) !important; }
+.contrast-150   { -webkit-filter: contrast(1.5) !important; filter: contrast(1.5) !important; }
+
+.invert     { -webkit-filter: invert(100%) !important; filter: invert(100%) !important; }
+.invert-0   { -webkit-filter: invert(0%) !important; filter: invert(0%) !important; }
+
+/* 05. Opacity */
+.opacity-none   { opacity: var(--tpl-opacity-none) !important; }
+.opacity-sm     { opacity: var(--tpl-opacity-sm) !important; }
+.opacity-md     { opacity: var(--tpl-opacity-md) !important; }
+.opacity-lg     { opacity: var(--tpl-opacity-lg) !important; }
+.opacity-full   { opacity: var(--tpl-opacity-full) !important; }
+
+/* 06. Background Color */
+.bg-transparent { background-color: transparent !important; }
+.bg-brand       { background-color: var(--tpl-clr-brand) !important; }
+.bg-accent      { background-color: var(--tpl-clr-accent) !important; }
+
+.bg-surface     { background-color: var(--tpl-clr-surface) !important; }
+.bg-primary     { background-color: var(--tpl-clr-primary-3) !important; }
+.bg-slate     { background-color: var(--tpl-clr-slate-3) !important; }
+
+.bg-info        { background-color: var(--tpl-clr-info-3) !important; }
+.bg-success     { background-color: var(--tpl-clr-success-3) !important; }
+.bg-warning     { background-color: var(--tpl-clr-warning-3) !important; }
+.bg-error       { background-color: var(--tpl-clr-error-3) !important; }
+
+/* 07. Text Color */
+.clr-white      { color: #ffffff !important; }
+.clr-black      { color: #000000 !important; }
+
+.clr-light      { color: var(--tpl-clr-gray-1) !important; }
+.clr-dark       { color: var(--tpl-clr-gray-12) !important; }
+
+.clr-text       { color: var(--tpl-clr-text) !important; }
+.clr-muted      { color: var(--tpl-clr-text-muted) !important; }
+.clr-low       { color: var(--tpl-clr-text-low) !important; }
+.clr-high      { color: var(--tpl-clr-text-high) !important; }
+
+.clr-brand      { color: var(--tpl-clr-brand) !important; }
+.clr-accent     { color: var(--tpl-clr-accent) !important; }
+.clr-primary    { color: var(--tpl-clr-primary-9) !important; }
+.clr-heading    { color: var(--tpl-clr-heading) !important; }
+.clr-link       { color: var(--tpl-clr-link) !important; }
+
+.clr-info       { color: var(--tpl-clr-info-12) !important; }
+.clr-success    { color: var(--tpl-clr-success-12) !important; }
+.clr-warning    { color: var(--tpl-clr-warning-12) !important; }
+.clr-error      { color: var(--tpl-clr-error-12) !important; }
+
+/* 08. Text shadow */
+.txt-shadow-sm      { text-shadow: 0 1px 2px rgba(0, 0, 0, 0.04) !important;}
+.txt-shadow-md      { text-shadow: 0 2px 4px rgba(0, 0, 0, 0.06) !important;}
+.txt-shadow-lg      { text-shadow: 0 4px 6px rgba(0, 0, 0, 0.08) !important;}
+.txt-shadow-none    { text-shadow: none !important;}
+
+/* 09. Borders */
+.bd {
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--tpl-clr-border);
+}
+.bd-r {
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-color: var(--tpl-clr-border);
+}
+.bd-l {
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-color: var(--tpl-clr-border);
+}
+.bd-t {
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-color: var(--tpl-clr-border);
+}
+.bd-b {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: var(--tpl-clr-border);
+}
+.bd-transparent     { border-color: transparent !important; }
+.bd-default         { border-color: var(--tpl-clr-border) !important; }
+.bd-brand           { border-color: var(--tpl-clr-brand) !important; }
+.bd-accent          { border-color: var(--tpl-clr-accent) !important; }
+
+.bd-primary         { border-color: var(--tpl-clr-primary-6) !important; }
+.bd-slate           { border-color: var(--tpl-clr-slate-6) !important; }
+.bd-gray            { border-color: var(--tpl-clr-gray-6) !important; }
+
+.bd-info            { border-color: var(--tpl-clr-info-6) !important; }
+.bd-success         { border-color: var(--tpl-clr-success-6) !important; }
+.bd-warning         { border-color: var(--tpl-clr-warning-6) !important; }
+.bd-error           { border-color: var(--tpl-clr-error-6) !important; }
+
+/* 10. Text Decoration Color */
+.decoration-transparent { -webkit-text-decoration-color: transparent !important; text-decoration-color: transparent !important; }
+.decoration-default     { -webkit-text-decoration-color: var(--tpl-clr-text) !important; text-decoration-color: var(--tpl-clr-text) !important; }
+.decoration-brand       { -webkit-text-decoration-color: var(--tpl-clr-brand) !important; text-decoration-color: var(--tpl-clr-brand) !important; }
+.decoration-accent      { -webkit-text-decoration-color: var(--tpl-clr-accent) !important; text-decoration-color: var(--tpl-clr-accent) !important; }
+
+.decoration-heading     { -webkit-text-decoration-color: var(--tpl-clr-heading) !important; text-decoration-color: var(--tpl-clr-heading) !important; }
+.decoration-link        { -webkit-text-decoration-color: var(--tpl-clr-link) !important; text-decoration-color: var(--tpl-clr-link) !important; }
+
+.decoration-primary     { -webkit-text-decoration-color: var(--tpl-clr-primary-7) !important; text-decoration-color: var(--tpl-clr-primary-7) !important; }
+.decoration-slate       { -webkit-text-decoration-color: var(--tpl-clr-slate-7) !important; text-decoration-color: var(--tpl-clr-slate-7) !important; }
+.decoration-gray        { -webkit-text-decoration-color: var(--tpl-clr-gray-7) !important; text-decoration-color: var(--tpl-clr-gray-7) !important; }
+
+.decoration-info        { -webkit-text-decoration-color: var(--tpl-clr-info-7) !important; text-decoration-color: var(--tpl-clr-info-7) !important; }
+.decoration-error       { -webkit-text-decoration-color: var(--tpl-clr-error-7) !important; text-decoration-color: var(--tpl-clr-error-7) !important; }
+.decoration-success     { -webkit-text-decoration-color: var(--tpl-clr-success-7) !important; text-decoration-color: var(--tpl-clr-success-7) !important; }
+.decoration-warning     { -webkit-text-decoration-color: var(--tpl-clr-warning-7) !important; text-decoration-color: var(--tpl-clr-warning-7) !important; }
+
+/* 11. Outline Color */
+.outline-transparent    { outline-color: transparent !important; }
+.outline-default        { outline-color: var(--tpl-clr-text) !important; }
+.outline-brand          { outline-color: var(--tpl-clr-brand) !important; }
+.outline-accent         { outline-color: var(--tpl-clr-accent) !important; }
+
+.outline-focus          { outline-color: var(--tpl-clr-focus-ring) !important; }
+
+.outline-primary        { outline-color: var(--tpl-clr-primary-8) !important; }
+.outline-slate          { outline-color: var(--tpl-clr-slate-8) !important; }
+.outline-gray           { outline-color: var(--tpl-clr-gray-8) !important; }
+
+.outline-info           { outline-color: var(--tpl-clr-info-8) !important; }
+.outline-success        { outline-color: var(--tpl-clr-success-8) !important; }
+.outline-warning        { outline-color: var(--tpl-clr-warning-8) !important; }
+.outline-error          { outline-color: var(--tpl-clr-error-8) !important; }
+
+/* 12. List Styles */
+.list-clean {
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.list-inline {
+    --list-gap: var(--tpl-sp-100);
+    display: flex;
+    align-items: center;
+    gap: var(--list-gap);
+}
+
+/* 13. Placholders */
+
+@keyframes tpl-shimmer {
+    0%   { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+}
+
+.skeleton {
+    position: relative !important;
+    background-color: var(--tpl-clr-slate-3) !important;
+    overflow: hidden !important;
+}
+.skeleton::after {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    animation: tpl-shimmer 1.75s ease-in-out 1.5s infinite !important;
+    background: linear-gradient(
+        90deg,
+        transparent 0%,
+        var(--tpl-white-a6) 50%,
+        transparent 100%
+    ) !important;
+    width: 100%;
+    height: 100%;
+    content: "" !important;
+}
+
+/* Text Placeholders */
+.placeholder-text {
+    display: inline-block !important;
+    border-radius: var(--tpl-rd-pill) !important;
+    background-color: var(--tpl-clr-slate-3) !important;
+    height: 1em !important;
+    color: transparent !important;
+}
+
+.placeholder-text-sm    { width: 5ch !important; }
+.placeholder-text-md    { width: 10ch !important; }
+.placeholder-text-lg    { width: 16ch !important; }
+.placeholder-text-xl    { width: 24ch !important; }
+.placeholder-text-2xl   { width: 32ch !important; }
+
+.placeholder-text-5     { width: 5% !important; }
+.placeholder-text-10    { width: 10% !important; }
+.placeholder-text-15    { width: 15% !important; }
+.placeholder-text-20    { width: 20% !important; }
+.placeholder-text-25    { width: 25% !important; }
+.placeholder-text-30    { width: 30% !important; }
+.placeholder-text-35    { width: 35% !important; }
+.placeholder-text-40    { width: 40% !important; }
+.placeholder-text-45    { width: 45% !important; }
+.placeholder-text-50    { width: 50% !important; }
+.placeholder-text-55    { width: 55% !important; }
+.placeholder-text-60    { width: 60% !important; }
+.placeholder-text-65    { width: 65% !important; }
+.placeholder-text-70    { width: 70% !important; }
+.placeholder-text-75    { width: 75% !important; }
+.placeholder-text-80    { width: 80% !important; }
+.placeholder-text-85    { width: 85% !important; }
+.placeholder-text-90    { width: 90% !important; }
+.placeholder-text-95    { width: 95% !important; }
+.placeholder-text-full  { width: 100% !important; }
+
+.placeholder-paragraph {
+    display: grid !important;
+    gap: var(--tpl-sp-075) !important;
+}
+
+.placeholder-paragraph > .placeholder-text {
+    display: block !important;
+}
+
+/* Image Placeholders (avec utilitaires de ratio) */
+.placeholder-img {
+    display: block !important;
+    background-color: var(--tpl-clr-slate-3) !important;
+    width: 100% !important;
+}
+.placeholder-cover {
+    background-position: center !important;
+    background-size: cover !important;
+}
+.placeholder-square {
+    aspect-ratio: var(--tpl-ratio-square) !important;
+}
+.placeholder-video {
+    aspect-ratio: var(--tpl-ratio-video) !important;
+}
+.placeholder-classic {
+    aspect-ratio: var(--tpl-ratio-classic) !important;
+}
+.placeholder-golden {
+    aspect-ratio: var(--tpl-ratio-golden) !important;
+}
+.placeholder-poster {
+    aspect-ratio: var(--tpl-ratio-poster) !important;
+}
+.placeholder-wide {
+    aspect-ratio: var(--tpl-ratio-wide) !important;
+}
+.placeholder-ultra {
+    aspect-ratio: var(--tpl-ratio-ultra) !important;
+}
+.placeholder-thin {
+    aspect-ratio: var(--tpl-ratio-thin) !important;
+}
+.placeholder-tall {
+    aspect-ratio: var(--tpl-ratio-tall) !important;
+}
