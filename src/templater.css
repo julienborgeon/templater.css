@@ -1,23 +1,23 @@
 /* 1. Variables / Design tokens */
-@import "/src/css/tokens/variables.css";
+@import "src/css/tokens/variables.css";
 
 /* 2. Reset / Reboot Core (base HTML elements) */
-@import "/src/css/base/reboot-core.css";
+@import "src/css/base/reboot-core.css";
 
 /* 3. Layout (Grid, Flex, Container) */
-@import "/src/css/layout/layout.css";
+@import "src/css/layout/layout.css";
 
 /* 4. Helpers (overflow, cursor, sr-only, print, z-index, etc.) */
-@import "/src/css/helpers/helpers.css";
+@import "src/css/helpers/helpers.css";
 
 /* 5. Spacing (margins, paddings, gaps) */
-@import "/src/css/utilities/spacing.css";
+@import "src/css/utilities/spacing.css";
 
 /* 6. Typography (text sizing, line-height, font utilities) */
-@import "/src/css/utilities/typography.css";
+@import "src/css/utilities/typography.css";
 
 /* 7. Visual Utilities (colors, shadows, filters, object-fit…) */
-@import "/src/css/utilities/utilities.css";
+@import "src/css/utilities/utilities.css";
 
 /* 8. Button Components */
-@import "/src/css/components/buttons.css";
+@import "src/css/components/buttons.css";

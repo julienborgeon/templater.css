@@ -29,7 +29,7 @@ function styles() {
             // Application de PostCSS : import, nesting, autoprefixer
             .pipe(
                 postcss([
-                    atImport(), // Inline @import
+                    atImport({ path: ["src"] }), // Inline @import
                     nested(), // Sass-like nested rules
                     autoprefixer(), // Ajout des préfixes navigateur
                 ])
