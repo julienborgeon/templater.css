@@ -2465,7 +2465,8 @@ html:focus-within {
 
 .bg-transparent { background-color: transparent !important; }
 
-.bg-body        { background-color: var(--tpl-clr-background) !important; }
+.bg-body, 
+.bg-background  { background-color: var(--tpl-clr-background) !important; }
 
 .bg-surface     { background-color: var(--tpl-clr-surface) !important; }
 
@@ -2552,6 +2553,8 @@ html:focus-within {
 .bg-gray-11     { background-color: var(--tpl-clr-gray-11) !important; }
 
 .bg-gray-12     { background-color: var(--tpl-clr-gray-12) !important; }
+
+.bg-white       { background-color: #ffffff !important; }
 
 .bg-white-a1    { background-color: var(--tpl-white-a1) !important; }
 
@@ -2721,6 +2724,8 @@ html:focus-within {
 .txt-shadow-none    { text-shadow: none !important;}
 
 /* 09. Borders */
+
+.bd-none { border: none !important; }
 
 .bd {
     border-width: 1px;

@@ -56,7 +56,8 @@
 
 /* 06. Background Color */
 .bg-transparent { background-color: transparent !important; }
-.bg-body        { background-color: var(--tpl-clr-background) !important; }
+.bg-body, 
+.bg-background  { background-color: var(--tpl-clr-background) !important; }
 .bg-surface     { background-color: var(--tpl-clr-surface) !important; }
 
 .bg-brand       { background-color: var(--tpl-clr-brand) !important; }
@@ -106,6 +107,7 @@
 .bg-gray-11     { background-color: var(--tpl-clr-gray-11) !important; }
 .bg-gray-12     { background-color: var(--tpl-clr-gray-12) !important; }
 
+.bg-white       { background-color: #ffffff !important; }
 .bg-white-a1    { background-color: var(--tpl-white-a1) !important; }
 .bg-white-a2    { background-color: var(--tpl-white-a2) !important; }
 .bg-white-a3    { background-color: var(--tpl-white-a3) !important; }
@@ -203,6 +205,8 @@
 .txt-shadow-none    { text-shadow: none !important;}
 
 /* 09. Borders */
+.bd-none { border: none !important; }
+
 .bd {
     border-width: 1px;
     border-style: solid;
