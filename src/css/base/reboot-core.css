@@ -1,0 +1,304 @@
+/* ===============================================================
+    REBOOT CORE — Optimized Reset for Landing Pages (Templater.css)
+================================================================== */
+
+/*  01. Root & environment
+===================================================== */
+
+:root {
+    color-scheme: light dark;
+    font-size: 100%;
+    line-height: var(--tpl-lh-base);
+    font-family: var(--tpl-ff-base, system-ui, sans-serif);
+    -ms-text-size-adjust: 100%;
+        text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        -webkit-animation: none !important;
+                animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+@media (forced-colors: active) {
+    * {
+        border-color: ButtonText !important;
+        background-color: transparent !important;
+        color: CanvasText !important;
+    }
+}
+
+/*  02. Box model & layout
+===================================================== */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:where(*, *::before, *::after) {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    overflow-y: scroll;
+    -ms-scroll-chaining: none;
+        overscroll-behavior: none;
+    touch-action: manipulation;
+}
+
+body {
+    background-color: var(--tpl-clr-background);
+    min-height: 100vh;
+    color: var(--tpl-clr-text);
+    font-size: var(--tpl-fs-base);
+    line-height: inherit;
+    font-family: inherit;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-text-size-adjust: 100%
+}
+
+main {
+    display: block;
+    isolation: isolate;
+}
+
+hr {
+    margin-block: var(--tpl-sp-100);
+    border: 0;
+    border-top: 1px solid var(--tpl-clr-separator);
+    height: 0;
+    overflow: visible;
+    color: inherit;
+}
+
+/*  03. Typography
+===================================================== */
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--tpl-clr-heading);
+    font-weight: var(--tpl-fw-700);
+    line-height: var(--tpl-lh-heading);
+    font-family: var(--tpl-ff-heading);
+    letter-spacing: var(--tpl-ls-heading);
+    text-wrap: balance;
+    overflow-wrap: break-word;
+}
+
+h1 { font-size: var(--tpl-fs-h1); }
+h2 { font-size: var(--tpl-fs-h2); }
+h3 { font-size: var(--tpl-fs-h3); }
+h4 { font-size: var(--tpl-fs-h4); }
+h5 { font-size: var(--tpl-fs-lead); }
+h6 { font-size: var(--tpl-fs-base); }
+
+p {
+    color: inherit;
+    text-wrap: pretty;
+    overflow-wrap: break-word;
+}
+
+blockquote {
+    -webkit-margin-start: var(--tpl-sp-200);
+            margin-inline-start: var(--tpl-sp-200);
+    -webkit-border-start: 4px solid var(--tpl-clr-border);
+            border-inline-start: 4px solid var(--tpl-clr-border);
+    -webkit-padding-start: var(--tpl-sp-150);
+            padding-inline-start: var(--tpl-sp-150);
+    quotes: "\201C" "\201D" "\2018" "\2019";
+    color: var(--tpl-clr-text-low);
+}
+
+/*  04. Inline text elements
+===================================================== */
+
+a {
+    color: var(--tpl-clr-link);
+    font-weight: 500;
+    text-decoration: none;
+    text-underline-offset: .175rem;
+}
+
+b, strong {
+    font-weight: var(--tpl-fw-700);
+}
+
+small {
+    font-size: 0.875em;
+}
+
+mark {
+    border-radius: var(--tpl-rd-xs);
+    background-color: var(--tpl-clr-warning-3);
+    padding: 0.125em 0.25em;
+    color: inherit;
+}
+
+code {
+    border-radius: var(--tpl-rd-sm);
+    background-color: var(--tpl-clr-surface);
+    padding: 0.125em 0.4em;
+    font-size: 0.875em;
+    font-family: monospace, monospace;
+}
+
+pre {
+    border-radius: var(--tpl-rd-md);
+    background-color: var(--tpl-clr-surface);
+    padding: var(--tpl-sp-100);
+    overflow: auto;
+}
+
+abbr[title] {
+    cursor: help;
+    -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted;
+    -webkit-text-decoration-skip-ink: none;
+            text-decoration-skip-ink: none;
+}
+
+/*  05. Media elements
+===================================================== */
+
+img, svg, video, picture, canvas {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    -ms-user-select: none;
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+}
+
+/*  06. Lists
+===================================================== */
+
+ul, ol {
+    -webkit-padding-start: var(--tpl-sp-200);
+            padding-inline-start: var(--tpl-sp-200);
+    list-style-position: outside;
+}
+
+/*  07. Forms & interactivity (light)
+===================================================== */
+
+select, option, textarea, input, fieldset, legend, label, button {
+    appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    border: none;
+    background: none;
+    padding: 0;
+    color: inherit;
+    font: inherit;
+}
+
+button,
+input[type="submit"] {
+    cursor: pointer;
+    border: 1px solid var(--tpl-clr-border);
+    border-radius: var(--tpl-rd-sm);
+    background-color: var(--tpl-clr-surface);
+    padding: var(--tpl-sp-050) var(--tpl-sp-100);
+}
+
+label {
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: var(--tpl-sp-025);
+    font-weight: var(--tpl-fw-500);
+}
+
+textarea {
+    border-radius: var(--tpl-rd-sm);
+    background-color: var(--tpl-clr-surface);
+    padding: var(--tpl-sp-050);
+    resize: vertical;
+}
+
+fieldset {
+    border: 1px solid var(--tpl-clr-border);
+    border-radius: var(--tpl-rd-sm);
+    padding: var(--tpl-sp-100);
+}
+
+legend {
+    padding: 0 var(--tpl-sp-050);
+    font-weight: var(--tpl-fw-700);
+    font-size: var(--tpl-fs-base);
+}
+
+summary {
+    cursor: pointer;
+    padding: var(--tpl-sp-050) 0;
+    list-style: none;
+}
+
+details[open] > summary {
+    margin-bottom: var(--tpl-sp-050);
+}
+
+details {
+    border: 1px solid var(--tpl-clr-border);
+    border-radius: var(--tpl-rd-sm);
+    background-color: var(--tpl-clr-surface);
+    padding: var(--tpl-sp-100);
+}
+
+dialog {
+    margin: auto;
+    border: 1px solid var(--tpl-clr-border);
+    border-radius: var(--tpl-rd-sm);
+    background-color: var(--tpl-clr-surface);
+    padding: var(--tpl-sp-100);
+    max-width: 40rem;
+    color: inherit;
+}
+
+dialog::-webkit-backdrop {
+    opacity: 0.8;
+    background-color: var(--tpl-clr-background);
+}
+
+dialog::backdrop {
+    opacity: 0.8;
+    background-color: var(--tpl-clr-background);
+}
+
+/*  08. Accessibility & helpers
+===================================================== */
+
+/* 1. Focus behavior */
+:focus {
+    outline-color: transparent;
+}
+
+:focus-visible {
+    outline-color: var(--tpl-clr-focus-ring);
+    outline-style: solid;
+    outline-width: var(--tpl-sp-012);
+    outline-offset: var(--tpl-sp-012);
+}
+
+/* 2. Improve keyboard navigation readability */
+html:focus-within {
+    scroll-behavior: smooth;
+}

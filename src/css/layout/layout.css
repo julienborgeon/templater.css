@@ -1,0 +1,104 @@
+/* ==================================================
+    LAYOUT — Structural layout utilities for Templater.css
+===================================================== */
+
+/* 01. Container fluide */
+.container {
+    --container-min: var(--tpl-bp-phone);
+    --container-max: var(--tpl-bp-desktop);
+    --container-padding-min: 1rem;
+    --container-padding-max: 2rem;
+    margin-inline: auto;
+    padding-inline: clamp(
+        var(--container-padding-min),
+        5vw,
+        var(--container-padding-max)
+    );
+    width: 100%;
+    max-width: clamp(
+        var(--container-min),
+        90vw,
+        var(--container-max)
+    );
+
+}
+
+/* 02. Sections */
+.section-full {
+    min-height: calc(100vh - var(--tpl-header-height));
+}
+
+/* 03. Flexbox */
+.flex, 
+.inline-flex {
+    --tpl-flex-gap: var(--tpl-sp-100);
+    gap: var(--tpl-flex-gap);
+}
+
+.flex               { display: flex; }
+.inline-flex        { display: inline-flex; }
+
+.flex-row           { flex-direction: row; }
+.flex-col           { flex-direction: column; }
+
+.items-center       { align-items: center; }
+.items-start        { align-items: start; }
+.items-flex-start   { align-items: flex-start; }
+.items-end          { align-items: end; }
+.items-flex-end     { align-items: flex-end; }
+
+.justify-start      { justify-content: flex-start; }
+.justify-center     { justify-content: center; }
+.justify-end        { justify-content: flex-end; }
+.justify-between    { justify-content: space-between; }
+.justify-around     { justify-content: space-around; }
+.justify-evenly     { justify-content: space-evenly; }
+
+.wrap               { flex-wrap: wrap; }
+.no-wrap            { flex-wrap: nowrap; }
+.grow               { flex-grow: 1 !important; }
+.shrink             { flex-shrink: 1 !important; }
+
+.self-auto          { align-self: auto !important; }
+.self-start         { align-self: flex-start !important; }
+.self-center        { align-self: center !important; }
+.self-end           { align-self: flex-end !important; }
+
+/* 04. Grid */
+.grid, 
+.inline-grid {
+    --tpl-grid-gap: var(--tpl-sp-100);
+    gap: var(--tpl-grid-gap);
+}
+
+.grid           { display: grid; }
+.inline-grid    { display: inline-grid; }
+
+.grid-fit { 
+    --tpl-grid-gap: var(--tpl-sp-0);
+    grid-template-rows: auto 1fr auto;
+}
+
+.grid-auto { grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr));}
+
+.cols-2                 { grid-template-columns: repeat(2, 1fr); }
+.cols-3                 { grid-template-columns: repeat(3, 1fr); }
+.cols-4                 { grid-template-columns: repeat(4, 1fr); }
+.cols-5                 { grid-template-columns: repeat(5, 1fr); }
+.cols-6                 { grid-template-columns: repeat(6, 1fr); }
+.cols-auto              { grid-template-columns: auto auto; }
+
+.place-center           { place-items: center !important; }
+.place-start            { place-items: start !important; }
+.place-end              { place-items: end !important; }
+
+.content-start          { align-content: start !important; }
+.content-center         { align-content: center !important; }
+.content-end            { align-content: end !important; }
+.content-between        { align-content: space-between !important; }
+.content-around         { align-content: space-around !important; }
+.content-evenly         { align-content: space-evenly !important; }
+
+.place-content-center   { place-content: center !important; }
+.place-content-start    { place-content: start !important; }
+.place-content-end      { place-content: end !important; }

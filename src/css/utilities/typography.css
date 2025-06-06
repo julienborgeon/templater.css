@@ -1,0 +1,131 @@
+/* ==================================================
+    TYPOGRAPHY — Text system utilities for Templater.css
+===================================================== */
+
+/* 01. Text sizing (from scale variables) */
+.fs-xs      { font-size: var(--tpl-fs-xs) !important; }
+.fs-sm      { font-size: var(--tpl-fs-sm) !important; }
+.fs-sl      { font-size: var(--tpl-fs-sl) !important; }
+.fs-base    { font-size: var(--tpl-fs-base) !important; }
+.fs-lead    { font-size: var(--tpl-fs-lead) !important; }
+.fs-h1      { font-size: var(--tpl-fs-h1) !important; }
+.fs-h2      { font-size: var(--tpl-fs-h2) !important; }
+.fs-h3      { font-size: var(--tpl-fs-h3) !important; }
+.fs-h4      { font-size: var(--tpl-fs-h4) !important; }
+.fs-brand   { font-size: var(--tpl-fs-brand) !important; }
+
+/* 02. Line-height */
+.lh-nw      { line-height: var(--tpl-lh-nw) !important; }
+.lh-xs      { line-height: var(--tpl-lh-xs) !important; }
+.lh-tn      { line-height: var(--tpl-lh-tn) !important; }
+.lh-sm      { line-height: var(--tpl-lh-sm) !important; }
+.lh-sl      { line-height: var(--tpl-lh-sl) !important; }
+.lh-base    { line-height: var(--tpl-lh-base) !important; }
+.lh-bm      { line-height: var(--tpl-lh-bm) !important; }
+.lh-md      { line-height: var(--tpl-lh-md) !important; }
+.lh-lg      { line-height: var(--tpl-lh-lg) !important; }
+.lh-xl      { line-height: var(--tpl-lh-xl) !important; }
+
+/* 03. Font weight */
+.fw-100     { font-weight: var(--tpl-fw-100) !important; }
+.fw-200     { font-weight: var(--tpl-fw-200) !important; }
+.fw-300     { font-weight: var(--tpl-fw-300) !important; }
+.fw-400     { font-weight: var(--tpl-fw-400) !important; }
+.fw-500     { font-weight: var(--tpl-fw-500) !important; }
+.fw-600     { font-weight: var(--tpl-fw-600) !important; }
+.fw-700     { font-weight: var(--tpl-fw-700) !important; }
+.fw-800     { font-weight: var(--tpl-fw-800) !important; }
+.fw-900     { font-weight: var(--tpl-fw-900) !important; }
+
+/* 04. Font-family */
+.ff-base    { font-family: var(--tpl-ff-base) !important; }
+.ff-heading { font-family: var(--tpl-ff-heading) !important; }
+.ff-brand   { font-family: var(--tpl-ff-brand) !important; }
+.ff-mono    { font-family: monospace, monospace !important; }
+
+/* 05. Text alignment */
+.txt-left       { text-align: left !important; }
+.txt-center     { text-align: center !important; }
+.txt-right      { text-align: right !important; }
+.txt-justify    { text-align: justify !important; }
+
+/* 06. Text transform */
+.txt-uppercase      { text-transform: uppercase !important; }
+.txt-lowercase      { text-transform: lowercase !important; }
+.txt-capitalize     { text-transform: capitalize !important; }
+
+/* 07. Text decoration */
+.txt-underline      { text-decoration: underline !important; }
+.txt-overline       { text-decoration: overline !important; }
+.txt-line-through   { text-decoration: line-through !important; }
+.decoration-dashed  { -webkit-text-decoration-style: dashed !important; text-decoration-style: dashed !important; }
+.decoration-dotted  { -webkit-text-decoration-style: dotted !important; text-decoration-style: dotted !important; }
+.decoration-double  { -webkit-text-decoration-style: double !important; text-decoration-style: double !important; }
+.decoration-wavy    { -webkit-text-decoration-style: wavy !important; text-decoration-style: wavy !important; }
+.underline-sm       { text-underline-offset: 0.125em !important; }
+.underline-md       { text-underline-offset: 0.25em !important; }
+.underline-lg       { text-underline-offset: 0.375em !important; }
+
+/* 08. Text behavior */
+.truncate {
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+}
+/* <div class="truncate" style="width:200px;" title="Cette phrase est beaucoup trop longue pour tenir dans son conteneur, elle sera donc tronquée."></div> */
+.txt-nowrap         { white-space: nowrap !important; }
+.txt-break-words    { overflow-wrap: break-word !important; }
+.txt-break-normal   { overflow-wrap: normal !important; }
+.txt-break-all      { word-break: break-all !important; }
+.txt-hyphens-none   { -webkit-hyphens: none !important; -ms-hyphens: none !important; hyphens: none !important; }
+.txt-hyphens-manual { -webkit-hyphens: manual !important; -ms-hyphens: manual !important; hyphens: manual !important; }
+.txt-hyphens-auto   { -webkit-hyphens: auto !important; -ms-hyphens: auto !important; hyphens: auto !important; }
+.txt-wrap-pretty    { text-wrap: pretty !important; }
+.txt-wrap-balance   { text-wrap: balance !important; }
+
+/* 09. Letter spacing */
+.ls-xs      { letter-spacing: var(--tpl-ls-xs) !important; }
+.ls-sm      { letter-spacing: var(--tpl-ls-sm) !important; }
+.ls-sl      { letter-spacing: var(--tpl-ls-sl) !important; }
+.ls-base    { letter-spacing: var(--tpl-ls-base) !important; }
+.ls-bm      { letter-spacing: var(--tpl-ls-bm) !important; }
+.ls-md      { letter-spacing: var(--tpl-ls-md) !important; }
+.ls-lg      { letter-spacing: var(--tpl-ls-lg) !important; }
+
+/* 10. Font style */
+.italic     { font-style: italic !important; }
+
+/* 11. Link styles */
+.link:hover {
+    text-decoration: underline;
+}
+
+/* 12. Editorial classes */
+.prose {
+    --tpl-prose-width: 65ch;
+    max-width: var(--tpl-prose-width);
+    line-height: var(--tpl-lh-base);
+    text-wrap: balance;
+    text-wrap: pretty;
+}
+.prose-xs       { --tpl-prose-width: 35ch; }
+.prose-sm       { --tpl-prose-width: 45ch; }
+.prose-sl       { --tpl-prose-width: 55ch; }
+.prose-lead     { --tpl-prose-width: 75ch; }
+.prose-wide     { --tpl-prose-width: 90ch; }
+.prose-ultra    { --tpl-prose-width: 105ch; }
+
+.highlight {
+    border-radius: var(--tpl-rd-xs);
+    background-color: var(--tpl-clr-highlight);
+    padding: 0.125em 0.25em;
+    color: inherit;
+}
+
+.quote {
+    margin-left: 0;
+    border-left: 4px solid var(--tpl-clr-border);
+    padding-left: var(--tpl-sp-100);
+    color: var(--tpl-clr-text-low);
+    font-style: italic;
+}
