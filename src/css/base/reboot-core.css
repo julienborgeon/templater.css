@@ -197,18 +197,22 @@ abbr[title] {
 /*  05. Media elements
 ===================================================== */
 
+canvas,
 img,
-svg,
-video,
 picture,
-canvas {
+svg,
+video {
 	display: block;
-	max-width: 100%;
 	height: auto;
-	-ms-user-select: none;
 	user-select: none;
 	-webkit-user-select: none;
 	-moz-user-select: none;
+}
+
+img,
+picture,
+video {
+	max-width: 100%;
 }
 
 /*  06. Lists
