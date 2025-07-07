@@ -78,6 +78,11 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
+::selection {
+	background-color: var(--tpl-clr-primary-9) !important;
+	color: var(--tpl-clr-primary-12) !important;
+}
+
 main {
 	display: block;
 }
@@ -122,10 +127,10 @@ h4 {
 	font-size: var(--tpl-fs-h4);
 }
 h5 {
-	font-size: var(--tpl-fs-lead);
+	font-size: var(--tpl-fs-h5);
 }
 h6 {
-	font-size: var(--tpl-fs-base);
+	font-size: var(--tpl-fs-h6);
 }
 
 p {
@@ -137,8 +142,8 @@ p {
 blockquote {
 	-webkit-margin-start: var(--tpl-sp-200);
 	margin-inline-start: var(--tpl-sp-200);
-	-webkit-border-start: 4px solid var(--tpl-clr-border);
-	border-inline-start: 4px solid var(--tpl-clr-border);
+	-webkit-border-start: 4px solid var(--tpl-clr-accent-6);
+	border-inline-start: 4px solid var(--tpl-clr-accent-6);
 	-webkit-padding-start: var(--tpl-sp-150);
 	padding-inline-start: var(--tpl-sp-150);
 	quotes: "\201C""\201D""\2018""\2019";
@@ -149,7 +154,7 @@ blockquote {
 ===================================================== */
 
 a {
-	color: var(--tpl-clr-link);
+	color: inherit;
 	font-weight: 500;
 	text-decoration: none;
 	text-underline-offset: 0.175rem;
@@ -251,7 +256,7 @@ button {
 button,
 input[type="submit"] {
 	cursor: pointer;
-	border: 1px solid var(--tpl-clr-border);
+	border: 1px solid var(--tpl-clr-accent-7);
 	border-radius: var(--tpl-rd-sm);
 	background-color: var(--tpl-clr-surface);
 	padding: var(--tpl-sp-050) var(--tpl-sp-100);
@@ -272,7 +277,7 @@ textarea {
 }
 
 fieldset {
-	border: 1px solid var(--tpl-clr-border);
+	border: 1px solid var(--tpl-clr-accent-6);
 	border-radius: var(--tpl-rd-sm);
 	padding: var(--tpl-sp-100);
 }
@@ -294,7 +299,7 @@ details[open] > summary {
 }
 
 details {
-	border: 1px solid var(--tpl-clr-border);
+	border: 1px solid var(--tpl-clr-accent-7);
 	border-radius: var(--tpl-rd-sm);
 	background-color: var(--tpl-clr-surface);
 	padding: var(--tpl-sp-100);
@@ -302,7 +307,7 @@ details {
 
 dialog {
 	margin: auto;
-	border: 1px solid var(--tpl-clr-border);
+	border: 1px solid var(--tpl-clr-accent-6);
 	border-radius: var(--tpl-rd-sm);
 	background-color: var(--tpl-clr-surface);
 	padding: var(--tpl-sp-100);

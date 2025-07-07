@@ -1,8 +1,8 @@
 @import "./css/tokens/variables.css";
 @import "./css/base/reboot-core.css";
+@import "./css/utilities/spacing.css";
 @import "./css/layout/layout.css";
 @import "./css/helpers/helpers.css";
 @import "./css/utilities/typography.css";
-@import "./css/utilities/spacing.css";
 @import "./css/utilities/utilities.css";
 @import "./css/components/buttons.css";
