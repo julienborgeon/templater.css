@@ -79,7 +79,7 @@ body {
 }
 
 ::selection {
-	background-color: var(--tpl-clr-primary-9) !important;
+	background-color: var(--tpl-clr-primary-4) !important;
 	color: var(--tpl-clr-primary-12) !important;
 }
 
@@ -337,7 +337,7 @@ dialog::backdrop {
 	outline-color: var(--tpl-clr-focus-ring);
 	outline-style: solid;
 	outline-width: var(--tpl-sp-012);
-	outline-offset: var(--tpl-sp-012);
+	outline-offset: 0;
 }
 
 /* 2. Improve keyboard navigation readability */

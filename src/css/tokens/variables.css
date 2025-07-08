@@ -338,7 +338,7 @@ VARIABLES
 	/*  Borders & Separator */
 	--tpl-clr-separator: var(--tpl-clr-accent-6);
 	/*  Accessibility */
-	--tpl-clr-focus-ring: var(--tpl-clr-accent-8);
+	--tpl-clr-focus-ring: var(--tpl-clr-primary-8);
 	--tpl-clr-highlight: var(--tpl-clr-warning-3);
 }
 
