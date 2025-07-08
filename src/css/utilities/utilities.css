@@ -667,9 +667,6 @@
 .bd-brand {
 	border-color: var(--tpl-clr-brand) !important;
 }
-.bd-accent {
-	border-color: var(--tpl-clr-accent) !important;
-}
 
 .bd-primary {
 	border-color: var(--tpl-clr-primary-6) !important;
