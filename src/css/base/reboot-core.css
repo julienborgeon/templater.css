@@ -80,7 +80,7 @@ body {
 
 ::selection {
 	background-color: var(--tpl-clr-primary-4) !important;
-	color: var(--tpl-clr-primary-12) !important;
+	color: var(--tpl-clr-primary-11) !important;
 }
 
 main {
