@@ -1847,7 +1847,7 @@ html:focus-within {
 	flex-grow: 1 !important;
 }
 
-.np-grow {
+.n0-grow {
 	flex-grow: 0 !important;
 }
 
@@ -1855,7 +1855,7 @@ html:focus-within {
 	flex-shrink: 1 !important;
 }
 
-.np-shrink {
+.n0-shrink {
 	flex-shrink: 0 !important;
 }
 
