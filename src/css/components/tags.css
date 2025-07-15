@@ -1,0 +1,57 @@
+/* ==================================================
+    Tags / Pills
+===================================================== */
+
+.tag {
+	--tag-cursor: default;
+	--tag-mg-inline: auto;
+	--tag-mg-block: 0;
+	--tag-bd-width: 1px;
+	--tag-bd-style: solid;
+	--tag-bd-color: var(--tpl-clr-accent-6);
+	--tag-bd-radius: var(--tpl-rd-pill);
+	--tag-bg-color: var(--tpl-clr-accent-3);
+	--tag-pd-inline: var(--tpl-sp-100);
+	--tag-pd-block: var(--tpl-sp-025);
+	--tag-w: fit-content;
+	--tag-clr: var(--tpl-clr-accent-11);
+	--tag-fw: 500;
+	--tag-fs: var(--tpl-fs-sl);
+
+	cursor: var(--tag-cursor);
+	margin-inline: var(--tag-mg-inline);
+	margin-block: var(--tag-mg-block);
+	border-width: var(--tag-bd-width);
+	border-style: var(--tag-bd-style);
+	border-color: var(--tag-bd-color);
+	border-radius: var(--tag-bd-radius);
+	background-color: var(--tag-bg-color);
+	padding-inline: var(--tag-pd-inline);
+	padding-block: var(--tag-pd-block);
+	width: var(--tag-w);
+	color: var(--tag-clr);
+	font-weight: var(--tag-fw);
+	font-size: var(--tag-fs);
+}
+
+.tag-sm {
+	--tag-pd-inline: var(--tpl-sp-075);
+	--tag-pd-block: var(--tpl-sp-012);
+	--tag-clr: var(--tpl-clr-accent-11);
+	--tag-fw: 500;
+	--tag-fs: var(--tpl-fs-sm);
+}
+
+.tag-md {
+	--tag-pd-inline: var(--tpl-sp-125);
+	--tag-pd-block: var(--tpl-sp-037);
+	--tag-clr: var(--tpl-clr-accent-11);
+	--tag-fw: 500;
+	--tag-fs: var(--tpl-fs-lead);
+}
+
+.tag-primary {
+	--tag-bd-color: var(--tpl-clr-primary-6);
+	--tag-bg-color: var(--tpl-clr-primary-3);
+	--tag-clr: var(--tpl-clr-primary-11);
+}
