@@ -88,13 +88,13 @@
 .grow {
 	flex-grow: 1 !important;
 }
-.n0-grow {
+.no-grow {
 	flex-grow: 0 !important;
 }
 .shrink {
 	flex-shrink: 1 !important;
 }
-.n0-shrink {
+.no-shrink {
 	flex-shrink: 0 !important;
 }
 
