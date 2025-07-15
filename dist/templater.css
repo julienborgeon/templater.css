@@ -1978,175 +1978,300 @@ html:focus-within {
 
 /* 01. Overflow */
 
-.overflow-auto      { overflow: auto !important; }
+.overflow-auto {
+	overflow: auto !important;
+}
 
-.overflow-hidden    { overflow: hidden !important; }
+.overflow-hidden {
+	overflow: hidden !important;
+}
 
-.overflow-visible   { overflow: visible !important; }
+.overflow-visible {
+	overflow: visible !important;
+}
 
-.overflow-scroll    { overflow: scroll !important; }
+.overflow-scroll {
+	overflow: scroll !important;
+}
 
 /* 02. Cursor */
 
-.cursor-auto         { cursor: auto !important; }
+.cursor-auto {
+	cursor: auto !important;
+}
 
-.cursor-default      { cursor: default !important; }
+.cursor-default {
+	cursor: default !important;
+}
 
-.cursor-pointer      { cursor: pointer !important; }
+.cursor-pointer {
+	cursor: pointer !important;
+}
 
-.cursor-wait         { cursor: wait !important; }
+.cursor-wait {
+	cursor: wait !important;
+}
 
-.cursor-not-allowed  { cursor: not-allowed !important; }
+.cursor-not-allowed {
+	cursor: not-allowed !important;
+}
 
 /* 03. User select */
 
-.select-none    { -webkit-user-select: none !important; -moz-user-select: none !important; user-select: none !important; }
+.select-none {
+	-webkit-user-select: none !important;
+	   -moz-user-select: none !important;
+	        user-select: none !important;
+}
 
-.select-text    { -webkit-user-select: text !important; -moz-user-select: text !important; user-select: text !important; }
+.select-text {
+	-webkit-user-select: text !important;
+	   -moz-user-select: text !important;
+	        user-select: text !important;
+}
 
-.select-all     { -webkit-user-select: all !important; -moz-user-select: all !important; user-select: all !important; }
+.select-all {
+	-webkit-user-select: all !important;
+	   -moz-user-select: all !important;
+	        user-select: all !important;
+}
 
 /* 04. Pointer events */
 
-.events-none    { pointer-events: none !important; }
+.events-none {
+	pointer-events: none !important;
+}
 
-.events-auto    { pointer-events: auto !important; }
+.events-auto {
+	pointer-events: auto !important;
+}
 
 /* 05. Visibility */
 
-.visible    { visibility: visible !important; }
+.visible {
+	visibility: visible !important;
+}
 
-.invisible  { visibility: hidden !important; opacity: 0 !important; }
+.invisible {
+	visibility: hidden !important;
+	opacity: 0 !important;
+}
 
 /* 06. Accessibility */
 
 .sr-only {
-    position: absolute;
-    margin: -1px;
-    padding: 0;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-    white-space: nowrap;
+	position: absolute;
+	margin: -1px;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	white-space: nowrap;
 }
 
 .skip-link {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
-    z-index: var(--tpl-z-above);
-    transition: transform 0.3s ease;
-    background: var(--tpl-clr-surface);
-    padding: var(--tpl-sp-050) var(--tpl-sp-100);
-    color: var(--tpl-clr-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	transform: translateY(-100%);
+	z-index: var(--tpl-z-max);
+	transition: transform 0.3s ease;
+	background: var(--tpl-clr-surface);
+	padding: var(--tpl-sp-050) var(--tpl-sp-100);
+	color: var(--tpl-clr-text);
 }
 
 .skip-link:focus {
-    transform: translateY(0);
+	transform: translateY(0);
 }
 
 /* 07. Print */
 
 @media print {
-    .print-hidden {
-        display: none !important;
-    }
+	.print-hidden {
+		display: none !important;
+	}
 
-    .print-only {
-        display: block !important;
-    }
+	.print-only {
+		display: block !important;
+	}
 }
 
 /* 08. Z-Index (using design tokens) */
 
-.z-base     { z-index: var(--tpl-z-base) !important; }
+.z-base {
+	z-index: var(--tpl-z-base) !important;
+}
 
-.z-above    { z-index: var(--tpl-z-above) !important; }
+.z-above {
+	z-index: var(--tpl-z-above) !important;
+}
 
-.z-dropdown { z-index: var(--tpl-z-dropdown) !important; }
+.z-dropdown {
+	z-index: var(--tpl-z-dropdown) !important;
+}
 
-.z-modal    { z-index: var(--tpl-z-modal) !important; }
+.z-modal {
+	z-index: var(--tpl-z-modal) !important;
+}
 
-.z-toast    { z-index: var(--tpl-z-toast) !important; }
+.z-toast {
+	z-index: var(--tpl-z-toast) !important;
+}
 
-.z-layout   { z-index: var(--tpl-z-layout) !important; }
+.z-layout {
+	z-index: var(--tpl-z-layout) !important;
+}
 
-.z-max      { z-index: var(--tpl-z-max) !important; }
+.z-max {
+	z-index: var(--tpl-z-max) !important;
+}
 
 /* 09. Position */
 
-.relative   { position: relative !important; }
+.relative {
+	position: relative !important;
+}
 
-.absolute   { position: absolute !important; }
+.absolute {
+	position: absolute !important;
+}
 
-.fixed      { position: fixed !important; }
+.fixed {
+	position: fixed !important;
+}
 
-.sticky     { position: sticky !important; }
+.sticky {
+	position: sticky !important;
+}
 
-.fixed-top      { position: fixed !important; top: 0; right: 0; left: 0; }
+.fixed-top {
+	position: fixed !important;
+	top: 0;
+	right: 0;
+	left: 0;
+}
 
-.fixed-bottom   { position: fixed !important; right: 0; bottom: 0; left: 0; }
+.fixed-bottom {
+	position: fixed !important;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
 
-.sticky-top     { position: sticky !important; top: 0; }
+.sticky-top {
+	position: sticky !important;
+	top: 0;
+}
 
-.sticky-bottom  { position: sticky !important; bottom: 0; }
+.sticky-bottom {
+	position: sticky !important;
+	bottom: 0;
+}
 
 /* 10. Isolation */
 
-.isolate     { isolation: isolate !important; }
+.isolate {
+	isolation: isolate !important;
+}
 
-.not-isolate { isolation: auto !important; }
+.not-isolate {
+	isolation: auto !important;
+}
 
 /* 11. Inset helpers */
 
-.inset-0     { inset: 0 !important; }
+.inset-0 {
+	inset: 0 !important;
+}
 
-.inset-x-0   { right: 0 !important; left: 0 !important; }
+.inset-x-0 {
+	right: 0 !important;
+	left: 0 !important;
+}
 
-.inset-y-0   { top: 0 !important; bottom: 0 !important; }
+.inset-y-0 {
+	top: 0 !important;
+	bottom: 0 !important;
+}
 
-.top-0       { top: 0 !important; }
+.top-0 {
+	top: 0 !important;
+}
 
-.right-0     { right: 0 !important; }
+.right-0 {
+	right: 0 !important;
+}
 
-.bottom-0    { bottom: 0 !important; }
+.bottom-0 {
+	bottom: 0 !important;
+}
 
-.left-0      { left: 0 !important; }
+.left-0 {
+	left: 0 !important;
+}
 
 /* 12. Order */
 
-.order-0     { order: 0 !important; }
+.order-0 {
+	order: 0 !important;
+}
 
-.order-1     { order: 1 !important; }
+.order-1 {
+	order: 1 !important;
+}
 
-.order-2     { order: 2 !important; }
+.order-2 {
+	order: 2 !important;
+}
 
-.order-3     { order: 3 !important; }
+.order-3 {
+	order: 3 !important;
+}
 
-.order-last  { order: 999 !important; }
+.order-last {
+	order: 999 !important;
+}
 
 /* 13. Aspect Ratio (using design tokens) */
 
-.ratio-square   { aspect-ratio: var(--tpl-ratio-square) !important; }
+.ratio-square {
+	aspect-ratio: var(--tpl-ratio-square) !important;
+}
 
-.ratio-video    { aspect-ratio: var(--tpl-ratio-video) !important; }
+.ratio-video {
+	aspect-ratio: var(--tpl-ratio-video) !important;
+}
 
-.ratio-classic  { aspect-ratio: var(--tpl-ratio-classic) !important; }
+.ratio-classic {
+	aspect-ratio: var(--tpl-ratio-classic) !important;
+}
 
-.ratio-golden   { aspect-ratio: var(--tpl-ratio-golden) !important; }
+.ratio-golden {
+	aspect-ratio: var(--tpl-ratio-golden) !important;
+}
 
-.ratio-poster   { aspect-ratio: var(--tpl-ratio-poster) !important; }
+.ratio-poster {
+	aspect-ratio: var(--tpl-ratio-poster) !important;
+}
 
-.ratio-wide     { aspect-ratio: var(--tpl-ratio-wide) !important; }
+.ratio-wide {
+	aspect-ratio: var(--tpl-ratio-wide) !important;
+}
 
-.ratio-ultra    { aspect-ratio: var(--tpl-ratio-ultra) !important; }
+.ratio-ultra {
+	aspect-ratio: var(--tpl-ratio-ultra) !important;
+}
 
-.ratio-thin     { aspect-ratio: var(--tpl-ratio-thin) !important; }
+.ratio-thin {
+	aspect-ratio: var(--tpl-ratio-thin) !important;
+}
 
-.ratio-tall     { aspect-ratio: var(--tpl-ratio-tall) !important; }
+.ratio-tall {
+	aspect-ratio: var(--tpl-ratio-tall) !important;
+}
 
 /* ==================================================
     TYPOGRAPHY — Text system utilities for Templater.css
