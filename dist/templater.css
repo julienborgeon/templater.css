@@ -2078,12 +2078,16 @@ html:focus-within {
 	transform: translateY(-100%);
 	z-index: var(--tpl-z-max);
 	transition: transform 0.3s ease;
-	background: var(--tpl-clr-surface);
-	padding: var(--tpl-sp-050) var(--tpl-sp-100);
+	border-bottom: 1px solid var(--tpl-clr-accent-6);
+	background-color: var(--tpl-clr-accent-3);
+	padding: var(--tpl-sp-075) var(--tpl-sp-100);
+	width: 100%;
+	overflow: hidden;
 	color: var(--tpl-clr-text);
+	text-align: center;
 }
 
-.skip-link:focus {
+.skip-link:focus-visible {
 	transform: translateY(0);
 }
 
